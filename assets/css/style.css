@@ -1,0 +1,32 @@
+/* cascading style sheet */
+/* three types  */
+/* 
+inline css 
+internal css 
+external css  */
+/* span{                          //element 
+    property : property_name;
+}
+
+.className {
+    property : property_name;
+}
+
+#id {
+    property : property_name;
+}
+
+input[type=="text"]{
+    property : property_name;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    
+    border: 5px solid black;
+    margin-top: 50px;
+    padding: 50px;
+}
