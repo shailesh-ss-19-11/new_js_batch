@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
 /* cascading style sheet */
 /* three types  */
 /* 
@@ -23,10 +24,39 @@ input[type=="text"]{
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 h1{
     
     border: 5px solid black;
     margin-top: 50px;
     padding: 50px;
+}
+table{
+    background-color: tomato;
+}
+.table_heading{
+    color: black;
+    font-weight: 700;
+}
+
+table tr td{
+    color: black;
+    font-weight: 100;
+}
+
+.animal_heading{
+    font-weight: 700;
+    margin : 5% 3% 0 5%;
+    /* background-color: tomato; */
+    /* background-color: #ff8000; */
+    /* background-color: rgb(255,255,255); */
+    /* background: #3d164b; */
+    color: rgb(14, 0, 142);
+    background-image: linear-gradient(to right,orange,white,green);
+    /* background-image:radial-gradient(orange, white, green) */
+    /* background-image: url("../img/lion.jpg") */
+
+    /* background-color: rgba(0, 191, 255,1) */
+
 }
