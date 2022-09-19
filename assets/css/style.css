@@ -60,3 +60,13 @@ table tr td{
     /* background-color: rgba(0, 191, 255,1) */
 
 }
+
+.heading{
+    text-align: center;
+    color: darkred;
+}
+
+.animal-img{
+        margin-left: 30%;
+        margin-right: 30%;
+}
