@@ -25,13 +25,14 @@ input[type=="text"]{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
 }
-h1{
-    
+.animal{
     border: 5px solid black;
     margin-top: 50px;
     padding: 50px;
 }
+
 table{
     background-color: tomato;
 }
@@ -48,6 +49,7 @@ table tr td{
 .animal_heading{
     font-weight: 700;
     margin : 5% 3% 0 5%;
+    font-size: 3rem;
     /* background-color: tomato; */
     /* background-color: #ff8000; */
     /* background-color: rgb(255,255,255); */
@@ -64,9 +66,87 @@ table tr td{
 .heading{
     text-align: center;
     color: darkred;
+    font-size: 2rem;
 }
 
 .animal-img{
         margin-left: 30%;
         margin-right: 30%;
+}
+
+/* two types of units  */
+/* non-responsive */
+
+/* px */
+/* cm  */
+/* inch */
+/* mt  */
+
+
+
+
+/* responsive */
+/* %  */
+/* vh  viewport height*/
+/* vw  viewport width*/
+/* em  */
+/* rem  */
+
+
+/* .myname{
+    background-color: rgb(208 204 204);
+    width: 100px;
+    height: 50vh;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin-left: 4%;
+    margin-right: 4%;
+
+    border-radius: 10px;
+} */
+
+    /* em - is 10 times of current element font size */
+    /* rem - is 10 times of root element font size */
+
+
+/* p{
+
+    font-size: 10px;
+    width: 20em;
+    height: 20vh;
+    border: 5px solid red;
+
+} */
+a{
+    font-size: 2rem;
+    display: block;
+}
+
+p{
+    font-size: 1.5rem;
+}
+/* .box{
+    width: 80rem;
+    height: 30rem;
+    background-color: red;
+} */
+.container{
+    display: inline-block;
+}
+div{
+    display: inline;
+}
+.box1{
+    height: 100vh;
+    width: 300px;
+    background-color: dodgerblue;
+    /* margin-bottom: 10px; */
+}
+
+.box2{
+    /* margin-top: 20px; */
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
 }
