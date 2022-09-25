@@ -63,10 +63,15 @@ table tr td{
 
 }
 
+h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
 .heading{
     text-align: center;
     color: darkred;
-    font-size: 2rem;
+    font-size: 5rem;
+
 }
 
 .animal-img{
@@ -118,10 +123,10 @@ table tr td{
     border: 5px solid red;
 
 } */
-a{
+/* a{
     font-size: 2rem;
     display: block;
-}
+} */
 
 p{
     font-size: 1.5rem;
@@ -133,9 +138,6 @@ p{
 } */
 .container{
     display: inline-block;
-}
-div{
-    display: inline;
 }
 .box1{
     height: 100vh;
@@ -150,3 +152,73 @@ div{
     width: 300px;
     background-color: tomato;
 }
+
+.nav-link{
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+a:link{
+    background-color: rgb(149, 174, 106);
+    color: white;
+}
+a:hover{
+    background-color: tomato;
+    color: white;
+}
+a:active{
+    background-color: black;
+}
+
+a:visited{
+    color: white;
+}
+span:first-child{
+    border: 1px solid red;
+}
+
+p::first-letter{
+    font-size: 4rem;
+}
+
+p::after{
+    content: "name";
+}
+h1::before{
+    content: "About ";
+}
+h1::after{
+    content: "s";
+}
+/* span:not(a){
+    border: 10px solid red;
+} */
+
+/* :root{
+    background-color: yellow;
+} */
+
+/* div:empty{
+    width: 30rem;
+    height: 30rem;
+    background-color: coral;
+    border: 1px solid red;
+} */
+hr{
+    width: 500px;
+    margin-left: 10px;
+    /* border: 1px solid red; */
+}
+.new-box{
+    width: 50rem;
+    height: 20rem;
+    background-color: coral;
+    border: 10px solid blue;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+

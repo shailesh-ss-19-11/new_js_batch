@@ -1,0 +1,66 @@
+.container{
+    border: 5px solid olivedrab;
+}
+
+h1{
+    border: 3px solid red;
+}
+h3{
+    position: sticky;
+    top: 0;
+    border: 4px solid blue;
+    background-color: tomato;
+}
+
+/* relative use for our define */
+/* .box{
+    position: relative;  
+    left: 80%;
+    bottom: 0;
+    top:25%;
+    height: 20rem;
+    width: 20rem;
+    background-color: tomato;
+} */
+
+/* absolute use for come out from document flow untill viewport height come in after document scroll */
+
+/* .box{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 20rem;
+    width: 20rem;
+    background-color: tomato;
+} */
+
+/* fixed use for come out from document flow untill and it will fixed at single place */
+
+/* .box{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    height: 20rem;
+    width: 20rem;
+    background-color: rgba(231, 100, 74,0.5);
+} */
+/* sticky use for attaching the element anywhere in doc */
+
+
+/* .box{
+    position: sticky;
+    top: 10px;
+    height: 20rem;
+    width: 20rem;
+    background-color: rgba(231, 100, 74,0.5);
+} */
+
+/* positions 5 */
+/* 
+static
+relative
+absolute 
+fixed 
+sticky */
+
+/* top bottom left right */
