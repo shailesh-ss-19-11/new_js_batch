@@ -1,0 +1,38 @@
+.container{
+    max-width: 1440px;
+    background-color: rgb(64, 50, 44);
+    border: 10px solid black;
+    margin: auto;
+    margin-top: 4rem;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */ /* responsive  */
+    /* grid-template-columns: 30% 30% 30% */  /* non responsive  */
+    /* grid-template-columns: 100px 100px 100px*/  /* non responsive  */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: 500px repeat(2,1fr); /*when first col dont want to resizable */
+    
+    /* auto fill  */
+    grid-template-columns: repeat(auto-fit,400px);
+    grid-template-columns: repeat(auto-fill,400px);
+
+
+
+    /* column-gap: 50px;
+    row-gap: 20px; */
+    gap: 10px 20px; 
+    /* grid-auto-flow: 100px; */
+    /* grid-template-rows: 100px 100px; */
+}
+
+/* implicit  -apply by browser  */
+/* explicit  -apply by user  */
+
+.item{
+    
+    padding: 10px;
+    color: white;
+    border: 5px solid rgb(43, 186, 7);
+}
+
+/* container properties  */
+/* items properties  */

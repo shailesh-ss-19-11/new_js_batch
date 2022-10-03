@@ -1,0 +1,59 @@
+
+.container{
+    display: flex;
+    border: 5px solid red;
+    /* height: 700px; */
+    /* flex directions /////////////////////////////////////////////////////////////////////////////////*/
+
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+
+    /* instead of flex wrap and flex direction we can use flex flow  */
+    /* flex-flow: row wrap; */    
+
+
+    /* justify content property ///////////////////////////////////////////////////////// */
+
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+
+    /* align items //////////////////////////////////////////////////// */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+
+    /* align content ////////////////////////////////////////////////// */
+    /* align-content: flex-start; */
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+}
+.box{
+    width: 500px;
+    border: 2px solid black;
+}
+.box1{
+    background-color: brown;
+}
+.box2{
+    background-color: coral;
+}
+.box3{
+    background-color: dodgerblue;
+}
+.box4{
+    background-color: grey;
+}
+.box5{
+    background-color: tomato;
+}
