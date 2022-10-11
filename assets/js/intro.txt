@@ -1,0 +1,11 @@
+javascript is object oriented programming languages as well as scripting language which is use for manupulate the front end or web pages 
+js is synchronous programming language 
+we use via two type
+inside html or internal js
+
+<script>
+    console.log("xyz")
+</script>
+
+external js
+<script src="file path"></script>
