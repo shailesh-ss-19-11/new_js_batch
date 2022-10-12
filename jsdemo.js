@@ -147,9 +147,9 @@
 // Array ///////////////////////////////////////////////////////////////////////////////////////////////
 // array is collection of similar type of data  ------>  array is the collection of mixture of data
 
-let fruits = ["mango","apple","grapes","watermelon","lemon"];
-console.log(fruits)
-console.log(Array.isArray(fruits))  
+// let fruits = ["mango","apple","grapes","watermelon","lemon"];
+// console.log(fruits)
+// console.log(Array.isArray(fruits))  
 
 // console.log(fruits[0]);
 // console.log(fruits[1]);
@@ -168,14 +168,90 @@ console.log(Array.isArray(fruits))
 // shifted_element = fruits.shift();
 // console.log(shifted_element)
 
-for(let i=0 ; i< fruits.length ;i++){
-    // console.log(fruits[i])
-    if(fruits[i]=="apple"){
-        console.log(`${fruits[i]} color is red and position of ${fruits[i]} in array is ${i}`);
-        console.log(fruits[i]+" "+ "color is red and position of apple in array is "+""+ i );
-    }
-}
+// for(let i=0 ; i< fruits.length ;i++){
+//     // console.log(fruits[i])
+//     if(fruits[i]=="apple"){
+//         console.log(`${fruits[i]} color is red and position of ${fruits[i]} in array is ${i}`);
+//         console.log(fruits[i]+" "+ "color is red and position of apple in array is "+""+ i );
+//     }
+// }
 
+
+// clone array //////////////////////////////////////////////////////////////////
+// let arr1 = ["item1","item2"];
+
+// pahla tarika 
+// let arr2 = arr1.slice(0).concat("item3","item4",["arritem1","arritem2"]);
+
+// dusra tarika 
+// let arr2 = ["item"].concat(arr1).concat("item4");
+
+// tisra tarika (recommended), ES6
+// let arr2 = [...arr1,"item3","item4","item5",1,2,3,4,5,6]
+
+// console.log(arr2);
+// console.log(arr1==arr3);
+
+// function /////////////////////////////////////////////////////////////////////
+// 1st way of define function 
+// function call_my_name(){
+//     console.log("hello shailesh")
+// }
+// call_my_name();
+
+
+// 2st way of define function(expressive function)
+// const call_my_name = function(){
+//     console.log("hello shailesh");
+// }
+// call_my_name();
+
+
+// 3rd way of define function(arrow function) (ES6 ,recommend)
+// const call_my_name = () =>{
+//     console.log("hello shailesh");
+// }
+// call_my_name();
+
+// function with parameters ///////////////////////////////////////////////////////////
+// function call_my_name(name,age){
+//     console.log(`my name is ${name} and age is ${age}`);
+// }
+// call_my_name("pranali",20)
+
+// const call_my_name = function(name,age){
+//     console.log(`my name is ${name} and age is ${age}`);
+// }
+// call_my_name("pranali",20)
+
+// const call_my_name = (name,age) =>{
+//     console.log(`my name is ${name} and age is ${age}`);
+// }
+// call_my_name("pranali",20)
+
+// with single parameter 
+// const call_my_name = name => name
+// console.log(call_my_name("pranali"));
+
+// function return ////////////////////////////////////////////////////////////////////
+// function is18(age){       //as a variable 
+//     // console.log()
+//     return age>=18
+// }
+// console.log(is18(10))
+
+// const is18 = function(age){
+//     return age>=18
+// }
+// console.log(is18(10))
+
+// const is18 =(age) =>{
+//     return age>18
+// }
+// console.log(is18(20))
+
+// const is18 = age => age>18
+// console.log(is18(20))
 
 
 
