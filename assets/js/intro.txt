@@ -2,6 +2,7 @@ javascript is object oriented programming languages as well as scripting languag
 js is synchronous programming language 
 we use via two type
 inside html or internal js
+in javascript everything is object 
 
 <script>
     console.log("xyz")
@@ -9,3 +10,20 @@ inside html or internal js
 
 external js
 <script src="file path"></script>
+
+
+
+
+
+
+
+mails 
+rutikawatkar23@gmail.com
+
+pranitamadekar9@gmail.com
+
+sonalijunghare010@gmail.com
+
+Prachigaupale123@gmail.com
+
+pranalichatap010@gmail.com
