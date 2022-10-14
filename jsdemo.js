@@ -253,14 +253,111 @@
 // const is18 = age => age>18
 // console.log(is18(20))
 
+// callback function  ////////////////////////////////////////////////////////////////////
+
+function names(){
+    console.log("shailesh")
+}
+
+function callmyname(names){
+    names();
+}
+callmyname(names);
+
+// conditional statements //////////////////////////////////////////////////////////////
+// if 
+// if-else 
+// if-else-if 
+// switch
+// let i=10
+
+// if(i==20){
+//     console.log("will execute")
+// }
+
+// if(i<10){
+//     console.log("yes,it is true");
+// }
+// else{
+//     console.log("no,it is false");
+
+// }
+
+// age<20 ===movie ticket 100
+// 21<age<30 ===movie ticket 200
+// 31<age<45 ===movie ticket 300
+// 46<age<65 ===movie ticket 100
+// let age = 45
+// if(age<20){
+//     console.log("movie ticket 100");
+// }
+// else if(21<age>30) {
+//     console.log("movie ticket 200");
+// }
+// else if(31<age<45){
+//     console.log("movie ticket 300");
+// }
+// else if(46<age>65){
+//     console.log("movie ticket 300");
+// }
+// else {
+//     console.log("you are not to buy");
+// }
+
+// let number = 1;
+// switch (number) {
+//     case 1:
+//         console.log("one")
+//         break;
+//     case 2:
+//         console.log("two")
+//         break;
+//     case 3:
+//         console.log("three")
+//         break;
+//     default:
+//         console.log("you have wrong choice")
+//         break;
+// } 
+
+// for(let i=0 ; i<10 ; i++){
+//     console.log("shailesh")
+// }
+
+// let i=0;
+// while(i<10){
+//     console.log("shailesh")
+//     i++;
+// }
+
+// let i=0
+// do{
+//     console.log("shailesh")
+//     i++
+// }while(i<10)
 
 
+// let fruits = ["mango","apple","grapes","watermelon","lemon"];
 
+// for(let i=0 ; i<fruits.length ;i++){
+//         console.log(fruits[i])
+//     }
+    
+// for in loop /////////////////////////////////////////////////////////////////
+// for(let i in fruits ){
+//     console.log(fruits[i])
+// }
+    
+// for of loop /////////////////////////////////////////////////////////////////
+// for(let fruit of fruits ){
+//     console.log(fruit)
+// }
 
+// fruits.forEach(function(fruit){
+//     console.log(fruit)
+// })
 
-
-
-// conditional statements 
+// fruits.forEach((fruit)=>console.log(fruit));
 
 
 
