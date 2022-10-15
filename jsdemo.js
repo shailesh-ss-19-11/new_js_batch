@@ -461,3 +461,87 @@
 // })
 
 
+// hoisting //////////////////////////////////////////////////////////////
+// hello();
+
+// function hello(){
+//     console.log("hello everyone");
+// }
+
+// const hello = function(){
+//     console.log("hello everyone");
+// }
+
+// const hello=()=>{
+//      console.log("hello everyone");
+// }
+
+// console.log(name);
+// var name = "shailesh"
+// console.log(name);
+
+// function inside function /////////////////////////////////////////////////////////////////////
+// function app(){
+
+//     const myfunction1 = function(){
+//         console.log("this is my function 1")
+//     }
+
+//     const myfunction2 = function(){
+//         console.log("this is my function 2")
+//     }
+
+//     function add(a,b){
+//         return a+b;
+//     }
+
+//     console.log(add(20,30))
+//     myfunction1();
+//     myfunction2();
+
+//     console.log("inside this function")
+// }
+// app();
+
+// block scope and function scope ///////////////////////////////////////////////
+// var -- globe scope
+// let ---local scope 
+// const ---cant change value & local scope
+// {
+//     var myname="shailesh"
+// }
+// console.log(myname)
+
+
+// callback function ////////////////////////////////////////////////////////////////
+
+// function myfunction1(callback){
+//     console.log(callback())
+    
+// }
+// myfunction1(myfunction2)
+
+// function myfunction2(){
+//     return `my name is shailesh age is 23`
+// }
+
+// function returning function //////////////////////////////////////////////
+// function myfunction(){
+//     function callme(){
+//         return "shailesh"; 
+//     }
+//     return callme;
+// }
+
+// const callfunction = myfunction();
+// console.log(callfunction());
+
+// function myfunction(){
+//    const hello = function(){
+//         console.log("shailesh")
+//     }
+//     return hello
+// }
+
+// const inside_return_function = myfunction()
+// console.log(inside_return_function())
