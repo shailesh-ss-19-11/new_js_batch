@@ -253,17 +253,6 @@
 // const is18 = age => age>18
 // console.log(is18(20))
 
-// callback function  ////////////////////////////////////////////////////////////////////
-
-function names(){
-    console.log("shailesh")
-}
-
-function callmyname(names){
-    names();
-}
-callmyname(names);
-
 // conditional statements //////////////////////////////////////////////////////////////
 // if 
 // if-else 
@@ -359,12 +348,76 @@ callmyname(names);
 
 // fruits.forEach((fruit)=>console.log(fruit));
 
+// function as parameter  ////////////////////////////////////////////////////////////////////
+// function calleveryone(){
+//     console.log("sonali","pranita","prachi","rutika")
+// }
+
+// function printmyname(evryone){
+//     evryone();
+// }
+
+// printmyname(calleveryone);
+// 2nd way //////////////////////////////////////////////////
+
+// let treename = function(){
+//     console.log("oak tree");
+// }
+
+// function tree(tree_name){
+//     tree_name()
+// }
+// tree(treename)
+
+// Anonymous function ////////////////////////////////////////////////////////////////////////
+
+// function tree(tree_name){
+//     tree_name();
+// }
+// tree(function(){
+//     console.log("oak tree")
+// })
+
+// function tree(tree_name){
+//     tree_name();
+// }
+// tree(()=>{console.log("oak tree")})
 
 
 
+// forEach method /////////////////////////////////////////////////////////////////////////
+// let fruits = ["mango","apple","grapes","watermelon","lemon"];
 
+// fruits.forEach((item)=>{
+//     if(item =="apple"){
+//         console.log(item);
+//     }
+// })
 
+// const arr_of_number = [1,2,3,4,5,6,7,8,9,0]
+// arr_of_number.forEach((num)=>{
+//     if(num%2==0){
+//         console.log(num)
+//     }
+// })
 
+// map method /////////////////////////////////////////////////////////////////////////
+
+// const numbers = [1,2,3,4,5,6,7,8,9]
+
+// numbers.map((n)=>{
+//     console.log(n*n)
+// })
+
+// const square = function(number){
+//     console.log(number*number)
+// }
+
+// function square(number){
+//     console.log(number*number);
+// }
+
+// numbers.map(square);
 
 
 
@@ -406,6 +459,5 @@ callmyname(names);
 //         var id = element.userId 
 //     });
 // })
-
 
 
