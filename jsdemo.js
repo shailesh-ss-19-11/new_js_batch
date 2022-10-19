@@ -545,3 +545,116 @@
 
 // const inside_return_function = myfunction()
 // console.log(inside_return_function())
+
+
+// Array methods 
+
+// const arr = [1,2,3,4,5,6,7,8,9,10];
+// forEach method /////////////////////////////////////
+
+// arr.forEach((a)=>{
+//     console.log(2*a);
+// })
+
+// Map method /////////////////////////////////////////
+// arr.map((a,index)=>{
+//     console.log(a*2+ " "+ index)
+// })
+
+// reduce method ////////////////////////////////////////////
+// const arr = [1,2,   3   ,4   ,5 ,6,7,8,9,10];
+// // 1+2+3+4+5+6+7+8+9
+// const add = arr.reduce((initial,currentvalue)=>{
+//     return initial + currentvalue;
+    
+//     // initial        +    currentvalue     =     return 
+//     //   1            +         2           =       3
+//     //   3            +         3           =       6
+//     //   6            +         4           =       10
+//     //   10           +         5           =       15
+//     //   15           +         6           =       21
+// })
+// console.log(add)
+
+// Sort method ////////////////////////////////////////////
+// const arr = [6,546,168,73,16987,651676,,543,21,324,67];
+// let fruits = ["mango","apple","grapes","watermelon","lemon"];
+
+// console.log(fruits.sort())
+
+// const sorted_array = arr.sort((a,b)=>{
+//     return a-b;
+// })
+// console.log(sorted_array)
+
+// filter method ////////////////////////////////////////////////
+
+// const ages = [12,35,65,85,15,42,78]
+
+// const is18 = ages.filter((age)=>{
+//     return age < 18
+// })
+// console.log(is18)
+
+
+// splice method ////////////////////////////////////////////////
+// let fruits = ["mango","apple","grapes","watermelon","lemon"];
+
+// const new_array = fruits.splice(1,3,"item")
+// console.log(new_array)
+// console.log(fruits)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1+2+3+4+5+6+7
+
+// let i=0;
+// while(i<10){
+//     let count=0
+//     count= count+i
+//     i++;
+// }
+// console.log(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
