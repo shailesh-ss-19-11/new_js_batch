@@ -658,17 +658,18 @@
 //     console.log(`key is ${key} and values is  ${user[key]}`)
 // }
 
-const user = {
-    username : "shailesh",
-    age      : 23,
-    email    :"gokhale@gmail.com",
-    "mobile numbers":[82078645671,3573216735],
-    address      :"nagpur",
-    "persional details":{
-        f_member:5,
-        DOB     : 22-5-2020
-    }
-}
+// home work of for of and for loop @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+// const user = {
+//     username : "shailesh",
+//     age      : 23,
+//     email    :"gokhale@gmail.com",
+//     "mobile numbers":[82078645671,3573216735],
+//     address      :"nagpur",
+//     "persional details":{
+//         f_member:5,
+//         DOB     : 22-5-2020
+//     }
+// }
 // const keys = Object.keys(user)
 // console.log(keys)
 // console.log(typeof keys)
@@ -678,6 +679,8 @@ const user = {
 // console.log(values)
 // console.log(typeof values)
 // console.log(Array.isArray(values))
+
+// home work of for in and for loop @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&&&&&&&&&&
 
 // for(let key of Object.keys(user)){
 //     console.log(key +"    "+user[key])
