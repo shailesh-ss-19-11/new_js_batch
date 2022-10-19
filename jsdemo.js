@@ -605,6 +605,89 @@
 // console.log(fruits)
 
 
+// object in javascript /////////////////////////////////////////////////////////////////////
+// collection of properties 
+// which is store in the form of key values pairs 
+// array is good but not sufficient
+// for real world data
+// object is not iterable its dont have index  
+// always key is in string form 
+// creation of object ///////////////////////////////////////////////////////////////////////////
+
+// const user = {
+//     username : "shailesh",
+//     age      : 23,
+//     email    :"gokhale@gmail.com",
+//     "mobile numbers":[82078645671,3573216735],
+//     address      :"nagpur",
+//     "persional details":{
+//         f_member:5,
+//         DOB     : 22-5-2020
+//     }
+// }
+
+// accessing values of object ///////////////////////////////////////////////////////////////
+// way 1//////////////////!!!!!!!!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// console.log(user);
+// console.log(user.username)
+// console.log(user.age)
+// console.log(user.email)
+// console.log(user.mobile number)    @@@ wrong way to access 
+
+// way 2//////////////////!!!!!!!!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+// console.log(user["username"])
+// console.log(user["age"])
+// console.log(user["email"])
+// console.log(user["persional_details"])
+// console.log(user["persional details"])
+// console.log(user["mobile numbers"])
+
+// add key value pairs in object @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// user.best_friend = "mohit"
+// user.farm_house = "saoner"
+// user.revenue = "5carore"
+
+// console.log(user);
+// console.log(user[0]);
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ object in for loop @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// console.log(user["age"])
+
+// for(let key in user){
+//     console.log(`key is ${key} and values is  ${user[key]}`)
+// }
+
+const user = {
+    username : "shailesh",
+    age      : 23,
+    email    :"gokhale@gmail.com",
+    "mobile numbers":[82078645671,3573216735],
+    address      :"nagpur",
+    "persional details":{
+        f_member:5,
+        DOB     : 22-5-2020
+    }
+}
+// const keys = Object.keys(user)
+// console.log(keys)
+// console.log(typeof keys)
+// console.log(Array.isArray(keys))
+
+// const values = Object.values(user)
+// console.log(values)
+// console.log(typeof values)
+// console.log(Array.isArray(values))
+
+// for(let key of Object.keys(user)){
+//     console.log(key +"    "+user[key])
+// }
+// console.log()
+
+
+
+
+
 
 
 
