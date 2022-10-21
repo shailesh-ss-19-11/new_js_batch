@@ -688,11 +688,107 @@
 // console.log()
 
 
+// array methods real life examples //////////////////////////////////////////////////////////////////////////@@@@@@@@
+// const cart = [
+//     {productId:1,productName:"iphone",price:149000},
+//     {productId:2,productName:"samsung",price:30000},
+//     {productId:3,productName:"nirma",price:500},
+//     {productId:4,productName:"cashews",price:3000},
+//     {productId:5,productName:"washing machine",price:21000},
+// ]
+
+// const totalamount = cart.reduce((totalprice,currentvalue)=>{
+//     return totalprice + currentvalue.price;
+// },0)
+// console.log(totalamount);
+
+// sort() /////////////////////////////////////////////////////////////////////////
+// 0	48	digit 0
+// 1	49	digit 1
+// 2	50	digit 2
+// 3	51	digit 3
+// 4	52	digit 4
+// 5	53	digit 5
+// 6	54	digit 6
+// 7	55	digit 7
+// 8	56	digit 8
+// 9	57	digit 9
 
 
+// const numbers = [5,9,1200,410,3000];
+//     //  5,   9, 1200, 410, 3000 
+//     // 53   57  49    52   51
+//     // 49   51   52   53   57
+//     // [1200, 3000, 410, 5, 9]
+// const sorted_numbers = numbers.sort((a,b)=>{
+//     return a-b ;
+// })
+// console.log(sorted_numbers);
+
+// // expected  = (5 9 410 1200 3000)
+// // we get =====
+// console.log(numbers.sort())
+
+// const names = ["PRAnali","pranita","Rutika","sagar"]; 
+// console.log(names.sort())
 
 
+// const cart = [
+//     {productId:1,productName:"iphone",price:149000},
+//     {productId:2,productName:"samsung",price:30000},
+//     {productId:3,productName:"nirma",price:500},
+//     {productId:4,productName:"cashews",price:3000},
+//     {productId:5,productName:"washing machine",price:21000},
+// ]
 
+// const low_to_high = cart.sort((a,b)=>{
+//     return a.price - b.price 
+// })
+// console.log(low_to_high);
+
+// const high_to_low = cart.sort((a,b)=>{
+//     return  b.price - a.price;
+// })
+// console.log(high_to_low)
+
+
+// const myArray = ["pranitaa","pallavi","sagar","dogg","cat"];
+
+// function islength3(string){
+//     return string.length == 3
+// }
+// console.log(islength3("cat"))
+
+// const finded = myArray.find((str)=>{
+//     return str.length<7
+// })
+// console.log(finded)
+
+// const cart = [
+//     {productId:1,productName:"iphone",price:149000},
+//     {productId:2,productName:"samsung",price:30000},
+//     {productId:3,productName:"nirma",price:500},
+//     {productId:4,productName:"cashews",price:3000},
+//     {productId:5,productName:"washing machine",price:21000},
+// ]
+
+// // const product  = cart.find((p)=>{
+// //     return p.price==500
+// // })
+// // console.log(product)
+
+// const product  = cart.find((p)=>p.price==500)
+// console.log(product)
+
+
+// const obj = {
+//     name:"shailesh",
+//     age:23
+// }
+
+// delete obj.name
+
+// console.log(obj)
 
 
 
