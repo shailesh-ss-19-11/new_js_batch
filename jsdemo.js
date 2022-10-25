@@ -790,49 +790,83 @@
 
 // console.log(obj)
 
+// console.log("ready");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 1+2+3+4+5+6+7
-
-// let i=0;
-// while(i<10){
-//     let count=0
-//     count= count+i
-//     i++;
+// clone of object ////////////////////////////////////////////////////////////////////////////////
+// const obj1 = {
+//     key1:"value1",
+//     key2:"value2",
 // }
-// console.log(i)
+// // obj2 ={...obj1}
+
+// const obj2 = Object.assign({},obj1)
+// console.log(obj2)
+
+// const user = {
+//     name:"shail",
+//     age:23,
+//     add:{city:"nagpur",area:"kamptee"}
+// }
+// console.log(user?.add?.plotno);
 
 
+// function inside object //////////////////////////////////////////////////////////////////
+
+// const about = function(){
+//     console.log(`my name is ${this.name} and age is ${this.age}`);
+//     // console.log(this);
+// }
+// const user1 ={
+//     name:"shailesh",
+//     age:23,
+//     about:about
+// }
+// user1.about();
+
+// const user2 ={
+//     name:"pranali",
+//     age:20,
+//     about:about
+// }
+// user2.about();
+
+// this keyword /////////////////////////////////////////////////////////////////////////
+// function printmyname(){
+//     console.log("shailesh")
+// }
+// window.printmyname();
+// this.printmyname();
+// // printmyname.call()
+// printmyname()
+// console.log(this===window)
+// // console.log(this);
 
 
+// call apply bind ///////////////////////////////////////////////////////////////////////////
+// const about=function(strength1,strength2){
+//     console.log(this.name,this.age,strength1,strength2);
+// }
+// const user1  = {
+//     name:"pranali",
+//     age:20,
+// }
+// const user2  = {
+//     name:"shailesh",
+//     age:23
+// }
+// const user3  = {
+//     name:"pranita",
+//     age:20
+// }
 
+// call apply bind methods use for calling function for different objects 
 
+// about.call(user2,"strength1","strength2");
+// about.apply(user2,["strength1","strength2"]);
 
-
-
-
+// bind method return a function which will we can store and call it directly 
+// const bindfunction = about.bind(user2,"strength1","strength2");
+// bindfunction()
 
 
 
