@@ -868,9 +868,84 @@
 // const bindfunction = about.bind(user2,"strength1","strength2");
 // bindfunction()
 
+// function callme(){
+//     return "shailesh"
+// }
+// console.log(callme());
+// console.log(window.callme.name);
+
+// const user1 ={
+//     name:"shailesh",
+//     age:23,
+//     about(){
+//         console.log("my name is shail");
+//     }
+// }
+// user1.about();
 
 
+// advance topic find velneribilities multiple user  ////////////////////////////////////////////////
+// const user1 ={
+//     firstname:"shailesh",
+//     lastname:"gokhale",
+//     age:23,
+//     email:"gokhaleshail@mail.com",
+//     address:"nagpur",
+//     about:function(){
+//         console.log(` my name is ${this.firstname} and age is ${this.age}`);
+//     },
+//     isyoung:function(){
+//         return this.age>18;
+//     }
+// }
 
 
+// const user2 ={
+//     firstname:"pranita",
+//     lastname:".....",
+//     age:23,
+//     email:"pranita@mail.com",
+//     address:"ramtek",
+//     about:function(){
+//         console.log(` my name is ${this.firstname} and age is ${this.age}`);
+//     },
+//     isyoung:function(){
+//         return this.age>18;
+//     }
+// }
+const user_functions ={
+    about:function(){
+        return `${this.firstname}, ${this.age}`
+    },
+    isyoung: function(){
+        return this.age>18
+    },
+    callme: function(){
+        return `${this.firstname}`
+    },
+    myadd :function(){
+        
+    }
+} 
 
+function createuser(firstname,lastname,age,email, address){
+        const user = {}
+        user.firstname  = firstname;
+        user.lastname   = lastname;
+        user.age        = age;
+        user.email      = email;
+        user.address    = address;
+        user.about      = user_functions.about
+        user.isyoung    = user_functions.isyoung
+        user.callme     = user_functions.callme
+        return user;
+}
 
+const user1 = createuser("shailesh","gokhale",9,"gmail@gmail.com","nagpur");
+const user2 = createuser("pranita","....",20,"pranita@gmail.com","ramtek");
+
+console.log(user1.about());
+console.log(user1.isyoung());
+console.log(user2.about());
+console.log(user2.callme());
+console.log(user1.callme());
