@@ -913,39 +913,126 @@
 //         return this.age>18;
 //     }
 // }
-const user_functions ={
-    about:function(){
-        return `${this.firstname}, ${this.age}`
-    },
-    isyoung: function(){
-        return this.age>18
-    },
-    callme: function(){
-        return `${this.firstname}`
-    },
-    myadd :function(){
+
+// const user_functions ={
+//     about:function(){
+//         return `${this.firstname}, ${this.age}`
+//     },
+//     isyoung: function(){
+//         return this.age>18
+//     },
+//     callme: function(){
+//         return `${this.firstname}`
+//     },
+//     myadd :function(){
         
-    }
-} 
+//     }
+// } 
+
+// function createuser(firstname,lastname,age,email, address){
+//         const user = {}
+//         user.firstname  = firstname;
+//         user.lastname   = lastname;
+//         user.age        = age;
+//         user.email      = email;
+//         user.address    = address;
+//         user.about      = user_functions.about
+//         user.isyoung    = user_functions.isyoung
+//         user.callme     = user_functions.callme
+//         return user;
+// }
+
+// const user1 = createuser("shailesh","gokhale",9,"gmail@gmail.com","nagpur");
+// const user2 = createuser("pranita","....",20,"pranita@gmail.com","ramtek");
+
+// console.log(user1.about());
+// console.log(user1.isyoung());
+// console.log(user2.about());
+// console.log(user2.callme());
+// console.log(user1.callme());
+
+
+// 2nd level andvance topics //////////////////////////////////////////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@
+
+// const obj1 = {
+//     key1 :"value1",
+//     key2 :"value2"
+// }
+
+// const obj2 = {
+//     key3 :"value3",
+//     key4 :"value4"
+// }
+
+// console.log(obj2.key1);
+
+//object.create method returns blank object with @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ proto [[prototype]]
+// in black object it have __proto__ and [[prototype]] 
+// in proto we get key 1 values
+
+// const obj2 = Object.create(obj1);  
+// console.log(obj2)
+// console.log(obj2.__proto__)
+// console.log(obj2.prototype)
+
+
+// const user_functions ={
+//     about:function(){
+//         return `${this.firstname}, ${this.age}`
+//     },
+//     isyoung: function(){
+//         return this.age>18
+//     },
+//     callme: function(){
+//         return `${this.firstname}`
+//     }
+// } 
+
+// function createuser(firstname,lastname,age,email, address){
+//         const user = Object.create(user_functions)
+//         user.firstname  = firstname;
+//         user.lastname   = lastname;
+//         user.age        = age;
+//         user.email      = email;
+//         user.address    = address;
+//         return user;
+// }
+// const user1 = createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
+// console.log(user1)
+// console.log(user1.about());
+// console.log(user1.isyoung());
+// console.log(user1.callme());
+
+// javascript function provide {}free space  + object 
+
+// function callmyname(){
+//     console.log("shailesh")
+// }
+// callmyname.age =23
+// callmyname.lastname ="gokhale"
+// console.log(callmyname.age)
+// console.log(callmyname.lastname)
+// console.log(callmyname.prototype);
+
+// advance topic prototype//////////////////////////////////////////////////////////////////
 
 function createuser(firstname,lastname,age,email, address){
-        const user = {}
+        const user = Object.create(createuser.prototype)
         user.firstname  = firstname;
         user.lastname   = lastname;
         user.age        = age;
         user.email      = email;
         user.address    = address;
-        user.about      = user_functions.about
-        user.isyoung    = user_functions.isyoung
-        user.callme     = user_functions.callme
         return user;
 }
-
-const user1 = createuser("shailesh","gokhale",9,"gmail@gmail.com","nagpur");
-const user2 = createuser("pranita","....",20,"pranita@gmail.com","ramtek");
-
-console.log(user1.about());
-console.log(user1.isyoung());
-console.log(user2.about());
-console.log(user2.callme());
-console.log(user1.callme());
+createuser.prototype.about = function(){
+    return `${this.firstname}, ${this.age}`
+}
+createuser.prototype.isyoung=function(){
+    return this.age>18
+}
+createuser.prototype.callme=function(){
+    return this.firstname
+}
+const user1 = createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
+console.log(user1)
