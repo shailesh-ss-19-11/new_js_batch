@@ -1016,23 +1016,112 @@
 
 // advance topic prototype//////////////////////////////////////////////////////////////////
 
-function createuser(firstname,lastname,age,email, address){
-        const user = Object.create(createuser.prototype)
-        user.firstname  = firstname;
-        user.lastname   = lastname;
-        user.age        = age;
-        user.email      = email;
-        user.address    = address;
-        return user; 
+// function createuser(firstname,lastname,age,email, address){
+//         const user = Object.create(createuser.prototype)
+//         user.firstname  = firstname;
+//         user.lastname   = lastname;
+//         user.age        = age;
+//         user.email      = email;
+//         user.address    = address;
+//         return user; 
+// }
+// createuser.prototype.about = function(){
+//     return `${this.firstname}, ${this.age}`
+// }
+// createuser.prototype.isyoung=function(){
+//     return this.age>18
+// }
+// createuser.prototype.callme=function(){
+//     return this.firstname
+// }
+// const user1 = createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
+// console.log(user1)
+
+
+// new keyword /////////////////////////////////////////////////////////////////
+
+// blank object return krta hai 
+// it auto call and accept the prototype 
+// it return object by itself
+// this ={}
+
+
+// function user(name,age){
+//     // object return krega 
+//     this.name = name
+//     this.age = age
+// }
+// const user1 = new user("shailesh",23);
+// console.log(user1)
+// end of example //////////////////////////////////////////
+
+
+// function Createuser(firstname,lastname,age,email, address){
+//             this.firstname  = firstname;
+//             this.lastname   = lastname;
+//             this.age        = age;
+//             this.email      = email;
+//             this.address    = address;
+//     }
+//     Createuser.prototype.about = function(){
+//         return `${this.firstname}, ${this.age}`
+//     }
+//     Createuser.prototype.isyoung=function(){
+//         return this.age>18
+//     }
+//     Createuser.prototype.callme=function(){
+//         return this.firstname
+//     }
+//     const user1 = new Createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
+//     for(let key in user1){
+//         if(user1.hasOwnProperty(key)){
+//             console.log(key)
+//         }
+//     }
+
+    // console.log(Object.getPrototypeOf(user1));
+    
+    // console.log(user1)
+    // console.log(user1.about())
+    // console.log(user1.isyoung())
+
+// let number = [1,2,3,4]
+// console.log(Object.getPrototypeOf(number));
+// console.log(number)
+
+// let number = new Array(1,2,3,4)
+// console.log(Array.isArray(number))
+
+// classes are fake 
+// introduce in ES6 
+
+
+class Createuser{
+    constructor(firstname,lastname,age,email, address){
+            this.firstname  = firstname;
+            this.lastname   = lastname;
+            this.age        = age;
+            this.email      = email;
+            this.address    = address;
+    }
+
+    about(){
+        return `${this.firstname}, ${this.age}`
+    }
+    isyoung(){
+        return this.age>18
+    }
+    
+    callme(){
+        return this.firstname
+    }
 }
-createuser.prototype.about = function(){
-    return `${this.firstname}, ${this.age}`
-}
-createuser.prototype.isyoung=function(){
-    return this.age>18
-}
-createuser.prototype.callme=function(){
-    return this.firstname
-}
-const user1 = createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
-console.log(user1)
+    const user1 = new Createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
+    console.log(user1.firstname)
+    console.log(user1.about())
+    console.log(user1.isyoung())
+    console.log(user1.callme())
+
+
+
+
