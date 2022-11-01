@@ -99,15 +99,17 @@
 // for loop 
 
 //loops iterations of work krne ke liye use krte hai 
-let n=10;
-for(let i=1 ; i<=n; i++){
-   if(i<10){
-      console.log(i+1);
-   }
-   else if(i==10){
-      // i=1;
-      console.log((i+1)-n);
-   }
-}
+// let n=10;
+// for(let i=1 ; i<=n; i++){
+//    if(i<10){
+//       console.log(i+1);
+//    }
+//    else if(i==10){
+//       // i=1;
+//       console.log((i+1)-n);
+//    }
+// }
 
 // 2 3 4 5 6 7 8 9 10 1
+
+// new keyword ///////////////////////////////////////////////////////////////////////////////////////

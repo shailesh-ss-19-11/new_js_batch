@@ -1053,7 +1053,7 @@
 // }
 // const user1 = new user("shailesh",23);
 // console.log(user1)
-// end of example //////////////////////////////////////////
+// end of example ///////////////////////////////////////////////////////
 
 
 // function Createuser(firstname,lastname,age,email, address){
@@ -1096,32 +1096,28 @@
 // introduce in ES6 
 
 
-class Createuser{
-    constructor(firstname,lastname,age,email, address){
-            this.firstname  = firstname;
-            this.lastname   = lastname;
-            this.age        = age;
-            this.email      = email;
-            this.address    = address;
-    }
+// class Createuser{
+//     constructor(firstname,lastname,age,email, address){
+//             this.firstname  = firstname;
+//             this.lastname   = lastname;
+//             this.age        = age;
+//             this.email      = email;
+//             this.address    = address;
+//     }
+//     about(){
+//         return `${this.firstname}, ${this.age}`
+//     }
+//     isyoung(){
+//         return this.age>18
+//     }
 
-    about(){
-        return `${this.firstname}, ${this.age}`
-    }
-    isyoung(){
-        return this.age>18
-    }
-    
-    callme(){
-        return this.firstname
-    }
-}
-    const user1 = new Createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
-    console.log(user1.firstname)
-    console.log(user1.about())
-    console.log(user1.isyoung())
-    console.log(user1.callme())
+//     callme(){
+//         return this.firstname
+//     }
+// }
 
-
-
-
+//     const user1 = new Createuser("shailesh","gokhale",23,"gmail@gmail.com","nagpur");
+//     console.log(user1.firstname)
+//     console.log(user1.about())
+//     console.log(user1.isyoung())
+//     console.log(user1.callme())
