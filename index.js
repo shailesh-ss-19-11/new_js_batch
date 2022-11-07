@@ -82,8 +82,7 @@
 // it returns nodelist 
 // we can use all type of loops in this 
 
-// const element = document.querySelectorAll("p");
-// console.log(element);
+const element = document.querySelectorAll("p");
 
 // type of object as array 
 // itarate 
@@ -107,8 +106,11 @@
 // }
 
 // using For In loop 
+
 // for (let ele in element) {
-//     console.log(element[ele]);
+//     if(element[ele].innerText.includes("shailesh")){
+//         element[ele].innerText = "hello xyz"   
+//     }
 // }
 
 // function collectdata(){
@@ -117,5 +119,37 @@
 //     const element = document.querySelector("ul")
 //     element.innerHTML += `<li>${data.value}</li>`
 // }
+
+// class list ///////////////////////////////////////////////////////////////////////////////////////
+// const classlistelement = document.querySelector(".container");
+// console.dir(classlistelement.classList)
+// classlistelement.classList.remove("container")
+// classlistelement.classList.remove("container-font")
+// classlistelement.classList.add("bg-dark");
+
+
+function lightmode (){
+    const element = document.querySelector("body");
+    element.classList.remove("dark");
+    element.classList.add("light");
+
+    const lightmode = document.querySelector(".lightmode")
+    lightmode.classList.add("hide");
+    
+    const darkmode = document.querySelector(".darkmode")
+    darkmode.classList.remove("hide");
+}
+
+function darkmode(){
+    const element = document.querySelector("body");
+    element.classList.remove("light");
+    element.classList.add("dark");
+
+    const lightmode = document.querySelector(".lightmode")
+    lightmode.classList.remove("hide");
+
+    const darkmode = document.querySelector(".darkmode")
+    darkmode.classList.add("hide");
+}
 
 
