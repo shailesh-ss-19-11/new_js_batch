@@ -14,7 +14,6 @@
     font-size: larger;
 }
 
-
 .light{
     background-color: white;
     color: black;
@@ -26,4 +25,8 @@
 
 .hide{
     display: none;
+}
+
+.bg-red{
+    background-color: red;
 }

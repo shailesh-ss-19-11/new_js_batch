@@ -82,7 +82,7 @@
 // it returns nodelist 
 // we can use all type of loops in this 
 
-const element = document.querySelectorAll("p");
+// const element = document.querySelectorAll("p");
 
 // type of object as array 
 // itarate 
@@ -128,28 +128,69 @@ const element = document.querySelectorAll("p");
 // classlistelement.classList.add("bg-dark");
 
 
-function lightmode (){
-    const element = document.querySelector("body");
-    element.classList.remove("dark");
-    element.classList.add("light");
+// function lightmode (){
+//     const element = document.querySelector("body");
+//     element.classList.remove("dark");
+//     element.classList.add("light");
 
-    const lightmode = document.querySelector(".lightmode")
-    lightmode.classList.add("hide");
+//     const lightmode = document.querySelector(".lightmode")
+//     lightmode.classList.add("hide");
     
-    const darkmode = document.querySelector(".darkmode")
-    darkmode.classList.remove("hide");
-}
+//     const darkmode = document.querySelector(".darkmode")
+//     darkmode.classList.remove("hide");
+// }
 
-function darkmode(){
-    const element = document.querySelector("body");
-    element.classList.remove("light");
-    element.classList.add("dark");
+// function darkmode(){
+//     const element = document.querySelector("body");
+//     element.classList.remove("light");
+//     element.classList.add("dark");
 
-    const lightmode = document.querySelector(".lightmode")
-    lightmode.classList.remove("hide");
+//     const lightmode = document.querySelector(".lightmode")
+//     lightmode.classList.remove("hide");
 
-    const darkmode = document.querySelector(".darkmode")
-    darkmode.classList.add("hide");
-}
+//     const darkmode = document.querySelector(".darkmode")
+//     darkmode.classList.add("hide");
+// }
 
+// DOM tree /////////////////////////////////////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@
+// return NodeList 
 
+const rootNode = document.getRootNode();        //document 
+const htmlElement = rootNode.childNodes[0];     //0th index par htmlelement
+console.dir(htmlElement);
+
+// const headElement = htmlElement.childNodes[0];
+// const bodyElement = htmlElement.childNodes[2];
+// console.log(headElement);
+// console.log(bodyElement);
+
+// const elementOfBody = bodyElement.childNodes[1];
+// const sibling = elementOfBody.nextSibling.nextSibling.nextSibling.nextSibling;
+// console.log(sibling);
+
+// function mousehover(){
+//     const ul = document.querySelector("ul");
+//     ul.classList.add("bg-red");
+//     alert("you have hover a mouse on me")
+// }
+
+//  add addEventListener//////////////////////////////////////////////////////////////////
+
+// const ul = document.querySelector("ul");
+// console.dir(ul);
+// ul.addEventListener("click",function(){
+//     const ul = document.querySelector("ul");
+//     ul.classList.add("bg-red");
+//     alert("hello")
+// })
+
+// const btn = document.querySelector('button');
+
+// function random(number) {
+//   return Math.floor(Math.random() * (number+1));
+// }
+
+// btn.addEventListener('click', () => {
+//   const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+//   document.body.style.backgroundColor = rndCol;
+// });
