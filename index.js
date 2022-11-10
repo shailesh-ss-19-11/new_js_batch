@@ -155,9 +155,9 @@
 // DOM tree /////////////////////////////////////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@
 // return NodeList 
 
-const rootNode = document.getRootNode();        //document 
-const htmlElement = rootNode.childNodes[0];     //0th index par htmlelement
-console.dir(htmlElement);
+// const rootNode = document.getRootNode();        //document 
+// const htmlElement = rootNode.childNodes[0];     //0th index par htmlelement
+// console.dir(htmlElement);
 
 // const headElement = htmlElement.childNodes[0];
 // const bodyElement = htmlElement.childNodes[2];
@@ -184,13 +184,75 @@ console.dir(htmlElement);
 //     alert("hello")
 // })
 
-// const btn = document.querySelector('button');
+// createElement ./////////////////////////////////////////////////////////////////////////////////
+// its a method to add element in the dom 
+// append
 
-// function random(number) {
-//   return Math.floor(Math.random() * (number+1));
+// const newtodoItem = document.createElement("li");
+// newtodoItem.textContent = "new item added" ;
+// const ul = document.querySelector("ul");
+// ul.append(newtodoItem);
+
+// prepend 
+
+// const newtodoItem = document.createElement("li");
+// newtodoItem.textContent = "new item added" ;
+// const ul1 = document.querySelector("ul");
+// ul1.prepend(newtodoItem);
+
+// const newtodoItem = document.createElement("li");
+// newtodoItem.textContent = "new item added" ;
+// const ul2 = document.querySelector("ul");
+// ul2.remove(newtodoItem);
+
+
+// inserAdjecentHTML ./////////////////////////////////////////////////////////////////////////////////
+
+// beforeend
+// afterend
+// beforebegin
+// afterbegin
+
+// const ul = document.querySelector("ul");
+// ul.insertAdjacentHTML("beforeend","<li>pranita added</li>")
+
+
+// const test=()=>{
+//     alert("span clicked");
 // }
 
-// btn.addEventListener('click', () => {
-//   const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-//   document.body.style.backgroundColor = rndCol;
-// });
+// const getdata=(event)=>{
+//     alert("hello");
+// }
+
+
+// async ///////////////////////////////////////////////////////////////////////////////
+
+// setTimeout(()=>{
+//     console.log("hello world");
+// },1000)
+
+
+// // console.log("hello world");
+// console.log("async");
+
+// API ----------------------------------Api Programming Interface
+//  api in the form of URL 
+// example htpps://www.google.com is the URL
+
+// http Request 
+
+// methods 4
+// GET  -----------------for get the data from backend
+// POST ---------------- sending the data into backend
+// PUT ----------------- sending the updated data into backend
+// PATCH ----------------- sending the updated data into backend
+// DELETE ----------------- delete the data from backend
+
+// const APIENDPOINT ="https://jsonplaceholder.typicode.com/posts";
+
+// fetch(APIENDPOINT).then((response)=>{
+//     return response.json()
+// }).then((response_data)=>{
+//     console.log(response_data);
+// })
